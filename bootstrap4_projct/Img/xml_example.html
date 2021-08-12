@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Film = "<film>" +
+            "<company>Kodak</company>" +
+            "<stock>Aerochrome Infrared</stock>" +
+            "<ISO>400</ISO>" +
+            "<year>1992</year>" +
+            "</film>";
+
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Film, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("year")[0].childNodes[0].nodeValue;
+
+        </script>
+    </body>
+
+    </html>
+
+ <!-- EXAMPLES OF AN XML STRUCTURE -->
+
+ <!--
+  var Movie = "<movie>" +
+            "<title>Schneider\'s List </title>" +
+            "<director>Steven Speilberg</director>" +
+            "<starring>Liam Neeson</starring>" +
+            "<year>1993</year>" +
+            "</movie>";
+
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Movie, "text/text/xml");
+
+            document.getElementById("XML_Exmaple").innerHTML = 
+            XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+ -->
+
+ <!--
+ <employees>
+     <emplyee>
+<name></name>
+<salary></salary>
+<age></age>
+     </emplyee>
+ </employees>
+
+ <parts>
+     <part>
+         <part_number></part_number>
+         <part_name></part_name>
+         <description></description>
+         <font_size></font_size>
+         <border_color></border_color>
+         <price></price>
+     </part>
+ </parts>
+-->
