@@ -28,30 +28,29 @@ h1 {
     font-weight: 800;
     text-align: center; /* Centers all h1 heading elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #F6FBF6;
+    color: #577366;
 }
 
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transform: scale(1.05); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1.5s; /* This causes the transiformation to last 1 second */
     transition-timing-function: ease-in-out; /* ensures the transition both in and out is smooth rather than linear */
 }
 
 /* Styling for Portfolio Title Text */
 .white-text {
-    color: #F6FBF6; /* This is sued to cyhange the color of the Portfolio Title text */
+    color: #A5C3B1; /* This is sued to cyhange the color of the Portfolio Title text */
     padding-top: 10vh; /* Adds padding (equal to th 10% of the viewport height) to the top of the Portfolio Title text */
 }
 
 /* Paragraph Elements */
 p {
     font-family: Questvrial, Libre Baskerville, sans-serif;
-    font-weight: 200;
     text-align: justify; /* This justifies the text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: 1.5vw; /* Relative font sizing equal to 1.5% of the viewport width */
+    font-size: 1.4vw; /* Relative font sizing equal to 1.5% of the viewport width */
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport wifth */
 }
@@ -69,6 +68,12 @@ p:hover {
     font-size: 16pt;
 }
 
+.center_footer {
+    text-align: center; /* Center aligns the text */
+    font-family: Questviral, sans-serif;
+    font-size: 16pt;
+}
+
 /* Center Class Elements */
 .center_left {
     text-align: center; /* Center aligns the text */
@@ -78,11 +83,12 @@ p:hover {
 
 .center:hover {
     transition: transform 2.5s; /* This makes the transform effect last 2 seconds */
-    transform: scale(1.1); /* This ensures all the elements with class "center" increase in size by 1.1 when hovered over */
+    transform: scale(1.05); /* This ensures all the elements with class "center" increase in size by 1.1 when hovered over */
     transition-timing-function: ease-in-out;
 }
 /* Anchor Elements */
 a {
+    font-family: Raleway;
     color: #016E90; /* This is to ensure all the links display as blue (the norm)*/
     cursor: pointer; /* This ensures that all the links change the mouse to a pointer when they hover over it */
     text-decoration: underline; /*  This ensures all links are underlined */
@@ -107,6 +113,13 @@ img {
     object-fit: cover;
     display: block; /* This ensures that all the images are able to be centered*/
     margin: auto auto auto auto; 
+}
+
+video {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
 }
 
 img:hover {
@@ -137,7 +150,9 @@ img:hover {
 footer {
     padding: 2%; /* With this, we can give the footer a padding (spacing) of 2% fo the width of the element area */
     color: #F6FBF6;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #577366;
+    background-color: rgba(87, 115, 102, .90);
+    z-index: 99;
 }
 
 /* THIS IS THE END OF THE GENERAL STYLING AREA*/
@@ -365,7 +380,7 @@ footer {
 .Column-2 {
     float: left;
     width: 50%;
-    padding: 1/6%;
+    padding: 1.6%;
     height: 450px;
     background-color: #6B9080;
 }
@@ -447,33 +462,33 @@ button {
 /* Hover effect for conact and submit buttons */
 button:hover, .form-container .btn:hover {
     color: #F6FBF6; /* This makes the text inside of the buttons white when hovered over */
-    background-color: black; /* The background of the button changes to black when hovered over */
-    transition-duration: 1s; /* This makes the transition last 1 second */
-   -webkit-transition-duration: 1s;  /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border tuurns silver when the button is hovered over */
+    background-color: #6B9080; /* The background of the button changes to black when hovered over */
+    transition-duration: .15s; /* This makes the transition last 1 second */
+   -webkit-transition-duration: .15s;  /* For Safari 4.0-8.0 */
+    border-color: black; /* The border tuurns silver when the button is hovered over */
 }
 
  /* Submit Button */
  .form-container .btn {
      background-color: #F6FBF6;
-     color: black;
+     color: #577366;
      border-color: black;
      margin-bottom: 1vh; /* Adds space between the submit button and the close button */
  }
 
 /* Clsoe Button */
 .form-container .cancel {
-    background-color: black;
-    color: #F6FBF6;
-    border-color: gray;
+    background-color: #F6FBF6;
+    color: #577366;
+    border-color: black;
 }
 
 /* Styling for close button on hover  */
 .form-container .cancel:hover {
     color: #F6FBF6;
-    background-color: darkred;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
+    background-color: #577366;
+    transition-duration: .15s;
+    -webkit-transition-duration: .15s;
     border-color: black;
 }
 
